@@ -18,15 +18,16 @@ class CardInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: screenSize.width * 0.55,
+      width: screenSize.width * 0.5,
       padding: EdgeInsets.only(bottom: 10.0),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           SvgPicture.asset(iconPath),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 35.0),
             child: Text(
-              '$infoTitle |',
+              '$infoTitle',
               style: TextStyle(
                 color: Colors.white,
               ),
